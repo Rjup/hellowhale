@@ -9,8 +9,8 @@ pipeline {
     }
     stage('kubectl') {
       steps {
-        sh '''cd ~/hellowhale/
-tree'''
+        sh '''cd 
+kubectl get all'''
       }
     }
   }
