@@ -9,7 +9,7 @@ pipeline {
     }
     stage('kubectl') {
       steps {
-        sh '''cd hellowhale/
+        sh '''cd ~/hellowhale/
 tree'''
       }
     }
