@@ -9,10 +9,8 @@ pipeline {
     }
     stage('kubectl') {
       steps {
-        withKubeConfig(clusterName: 'fpt-box', contextName: 'fpt-box', credentialsId: 'rancher-server', serverUrl: 'https://rancher.platform.tdsltestbed.test') {
-          sh 'kubectl get all'
-        }
-
+        sh '''cd hellowhale/
+tree'''
       }
     }
   }
