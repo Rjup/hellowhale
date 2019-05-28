@@ -3,9 +3,7 @@ pipeline {
   stages {
     stage('docker') {
       steps {
-        sh '''docker build . -t hellowhale
-docker images
-docker run -d -p28080:80 --name HelloWhale hellowhale
+        sh '''docker images
 '''
       }
     }
